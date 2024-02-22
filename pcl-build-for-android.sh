@@ -44,6 +44,9 @@ echo -e "  |      |] "
 echo -e "  \      /  "
 echo -e "   '----' \033[m\n\n"
 
+
+conan create -pr conan-profiles/${PROFILE} conanfiles/eigen bashbug/stable
+
 conan create -pr conan-profiles/${PROFILE} conanfiles/pcl bashbug/stable
 
 cp conan-profiles/${PROFILE} ~/.conan/profiles
